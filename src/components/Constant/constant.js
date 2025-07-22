@@ -61,7 +61,10 @@ export const Domain = "https://sophiadaniels.com";
 // ==================
 export const Location = "New York, USA";
 export const PhoneNumber = "+1 (555) 123-4567";
-export const Email = "contact@sophiadaniels.com";
+export const WealthEmail = "advisory@sophiadaniels.com";
+export const ClientEmail = "support@sophiadaniels.com";
+export const RealEstateEmail = "realestate@sophiadaniels.com";
+
 
 // ==================
 // Social Media

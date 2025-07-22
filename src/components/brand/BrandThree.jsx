@@ -3,26 +3,26 @@ import React from 'react'
 const BrandThree = (props) => {
     const BrandList = [
         {
-            img: "140x60"
+            img: "/images/personal/google.png"
         }, {
-            img: "140x60"
+            img: "/images/personal/forbes.png"
         }, {
-            img: "140x60"
+            img: "/images/personal/coin.png"
         }, {
-            img: "140x60"
+            img: "/images/personal/euro.png"
         }, {
-            img: "140x60"
+            img: "/images/personal/fedex.jpg"
         }, {
-            img: "140x60"
+            img: "/images/personal/visa.png"
         }, {
-            img: "140x60"
+            img: "/images/personal/apple.jpg"
         }, {
-            img: "140x60"
+            img: "/images/personal/amazon.png"
         }
     ]
     return (
         <div className={`${props.bgColor} py-10 sm:py-16 lg:py-24`}>
-            <div className="grid grid-cols-1 lg:grid-cols-3 lg:gap-8 gap-12 items-center md:max-w-7xl max-w-lg mx-auto">
+            <div className="grid items-center max-w-lg grid-cols-1 gap-12 mx-auto lg:grid-cols-3 lg:gap-8 md:max-w-7xl">
                 <div>
                     <h2 className={`mb-6 md:text-7xl uppercase text-center lg:text-start text-5xl font-medium md:font-extralight py-8 text-[#1f1f25] ${props.animate ? 'wow animate__fadeInDown' : ''}`} data-wow-duration="1s">{props.title ? props.title : 'Brands'}</h2> 
                 </div>
@@ -30,8 +30,8 @@ const BrandThree = (props) => {
                     {
                         BrandList.map((item, index) => {
                             return (
-                                <div key={index} className="cursor-pointer rounded py-6">
-                                    <img src={`/images/brand/${item.img}.svg`} alt={`Brands ${index}`} className="opacity-70 transition-transform duration-300 lg:max-h-52 lg:max-w-150 max-h-12 max-w-100 cursor-pointer hover:transform hover:scale-90 hover:rotate-12 hover:opacity-100" />
+                                <div key={index} className="py-6 rounded cursor-pointer">
+                                    <img src={`${item.img}`} alt={`Brands ${index}`} className="transition-transform duration-300 cursor-pointer opacity-70 lg:max-h-52 lg:max-w-150 max-h-12 max-w-100 hover:transform hover:scale-90 hover:rotate-12 hover:opacity-100" />
                                 </div>
                             )
                         })

@@ -346,9 +346,9 @@ const MainHeader = ({ subHeader, demo }) => {
             <MobileNav style={{ display: isMobileNavOpen ? 'flex' : 'none' }}>
                 <NavItemMobile>
                     <Link onClick={() => toggleSubMenu("home")}>
-                        <span>Home </span><MdOutlineKeyboardArrowDown />
+                        <span>Home </span>
                     </Link>
-                    <NavItemMobileSubMenu
+                    {/* <NavItemMobileSubMenu
                         style={{ display: submenuStates.home ? "block" : "none" }}
                     >
                         <NavItemMobileSubMenuItem>
@@ -363,7 +363,7 @@ const MainHeader = ({ subHeader, demo }) => {
                         <NavItemMobileSubMenuItem>
                             <Link to="/minimal">Minimal</Link>
                         </NavItemMobileSubMenuItem>
-                    </NavItemMobileSubMenu>
+                    </NavItemMobileSubMenu> */}
                 </NavItemMobile>
 
                 <NavItemMobile>
