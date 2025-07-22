@@ -14,7 +14,7 @@ const BrandThree = (props) => {
             img: "/images/personal/fedex.jpg"
         }, {
             img: "/images/personal/visa.png"
-        }, {
+    }, {
             img: "/images/personal/apple.jpg"
         }, {
             img: "/images/personal/amazon.png"
